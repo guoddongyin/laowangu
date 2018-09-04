@@ -4,6 +4,7 @@
 			<div class="nav" style="position: absolute;top: -30px;right: 0;">
 				<span  style="color: #ffffff">您当前的位置：</span>
 				<router-link :to="{path:'/index'}"  style="color: #ffffff">首页> </router-link>
+				<router-link :to="{path:'/knowledge',query:{articid:articid}}" style="color: #ffffff">企业动态</router-link>
 				<router-link :to="{path:'/knowledge_del'}" style="color: #188ecf">企业动态详情</router-link>
 			</div>
      		<div class="mian_box">
@@ -26,11 +27,13 @@
     data() {
       return {
 			list:'',
+          articid:''
       }
     },
     mounted(){
 		this.get_height()
 		this.get_del()
+		this.articid=this.$route.query.articid
     },
     methods: {
     	go_top(){

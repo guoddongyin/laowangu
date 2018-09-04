@@ -1,6 +1,6 @@
 <template>
     <div class="big_box">
-		<mt-swipe :auto="0" ref="mtSwipe" :show-indicators="false" :continuous="false" style="height: 100%;" @change="handleChange">
+		<mt-swipe :auto="3000"  ref="mtSwipe" :show-indicators="false" :continuous="true" style="height: 100%;" @change="handleChange">
 			<mt-swipe-item>
 				<a style="display: block;position: relative;width: 100%;height: 100%">
 					<div  style="position: absolute;background-color:rgba(0,0,0,0.5);color: #ffffff;font-size: 60px;width:100%;left: 0;right: 0;margin-left: 0;top: 0;bottom: 0;display: flex">
@@ -96,7 +96,6 @@
         handleChange(index) {
     		this.check_index=index
   		},
-		//轮播图自动播放
 //		autoplay(){
 //            var sw =0
 //            var number = slideBox.find(".spanBox span");

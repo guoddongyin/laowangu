@@ -4,6 +4,7 @@
 			<div class="nav" style="position: absolute;top: -30px;right: 0;">
 				<span  style="color: #ffffff">您当前的位置：</span>
 				<router-link :to="{path:'/index'}"  style="color: #ffffff">首页> </router-link>
+				<router-link :to="{path:'/case'}" style="color: #ffffff">案例展示></router-link>
 				<router-link :to="{path:'/case_del'}" style="color: #188ecf">案例展示详情</router-link>
 			</div>
      		<div class="mian_box">

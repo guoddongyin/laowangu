@@ -4,7 +4,7 @@
 			<div class="nav" style="position: absolute;top: -30px;right: 0;">
 				<span  style="color: #ffffff">您当前的位置：</span>
 				<router-link :to="{path:'/index'}"  style="color: #ffffff">首页> </router-link>
-				<router-link :to="{path:'/product'}" style="color: #ffffff">产品中心></router-link>
+				<router-link :to="{path:'/product',query:{prodid:prodid}}" style="color: #ffffff">产品中心></router-link>
 				<router-link :to="{path:'/product_del'}" style="color: #188ecf">产品详情</router-link>
 			</div>
      		<div class="mian_box">

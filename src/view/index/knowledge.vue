@@ -4,7 +4,7 @@
 			<div class="nav" style="position: absolute;top: -30px;right: 0;">
 				<span  style="color: #ffffff">您当前的位置：</span>
 				<router-link :to="{path:'/index'}"  style="color: #ffffff">首页> </router-link>
-				<router-link :to="{path:'/video'}" style="color: #188ecf">企业动态</router-link>
+				<router-link :to="{path:'/knowledge',query:{articid:articid}}" style="color: #188ecf">企业动态</router-link>
 			</div>
      		<div class="mian_box">
      			<div class="main_cotent">
@@ -64,7 +64,7 @@
     methods: {
     	//跳转详情页
     	go_del(id){
-    		this.$router.push({path:'knowledge_del',query:{id:id}})
+    		this.$router.push({path:'knowledge_del',query:{id:id,articid:this.articid}})
     	},
         gevideoList() {//请求产品列表
             var that=this;
